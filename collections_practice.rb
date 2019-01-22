@@ -42,5 +42,5 @@ def merge_data(keys, data)
 end
 
 def find_cool(cool)
-    cool.select {|i| i.any? {|key,value| value == "cool"}} 
+    cool.select {|i| i.any? {|key,value| value == "cool"}}
 end
