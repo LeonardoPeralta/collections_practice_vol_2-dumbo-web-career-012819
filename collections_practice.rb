@@ -15,5 +15,18 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-array.count { |duplicates| duplicates % 2 == 0 }
+output_array = [];
+
+array.each do |element_a|
+  counter = element_a[:count] = 1
+  if output_array.include?(element_a) == false
+    output_array << element_a
+  elsif output_array.include?(element_a)
+      output_array.each do |element_b|
+        element_b[:count] += 1
+      end
+    end
+  end
+  output_array
+
 end
