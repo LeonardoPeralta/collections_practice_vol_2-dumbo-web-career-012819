@@ -48,5 +48,5 @@ end
 def organize_schools(schools)
     locations_hash = {}
     schools.collect { |key,value| locations_hash[value[:location]] = []}
-    locations_hash.each {|key,value| schools.each {|key2,value2| if key == v1[:location] then v << k1 end}}
+    locations_hash.each {|key,value| schools.each {|key2,value2| if key == value2[:location] then value << key2 end}}
 end
