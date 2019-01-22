@@ -30,3 +30,4 @@ array.each do |element_a|
   output_array
 
 end
+
