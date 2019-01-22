@@ -32,6 +32,11 @@ end
 
 def merge_data(keys, data)
   merged_data = []
-  keys.each {|i| data.first.each {|key,value| if i.values[0] == key then merged_data << i.merge(value) end}}
+  keys.each {|i| data.first.each {|key,value| 
+    if i.values[0] == key 
+      then merged_data << i.merge(value) 
+    end
+   }
+  }
   merged_data
 end
